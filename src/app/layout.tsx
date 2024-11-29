@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body className="relative h-screen bg-gradient-to-br from-yellow-300 to-orange-200">{children}</body>
     </html>
   );
 }

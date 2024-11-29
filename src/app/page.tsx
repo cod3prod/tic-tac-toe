@@ -1,13 +1,20 @@
+"use client";
+
 import Game from "./components/game";
+import { GameProvider } from "@/contexts/game-context";
+import Header from "./components/heaeder";
+import Footer from "./components/footer";
 
 export default function Page() {
   return (
     <>
-      <header>헤더</header>
+      <Header />
       <main className="w-full">
-        <Game />
+        <GameProvider>
+          <Game />
+        </GameProvider>
       </main>
-      <footer>푸터</footer>
+      <Footer />
     </>
   );
 }

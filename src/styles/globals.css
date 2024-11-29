@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.jaro-header {
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
