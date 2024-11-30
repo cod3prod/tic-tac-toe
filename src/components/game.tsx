@@ -22,7 +22,7 @@ export default function Game() {
 
   return (
     <section className="container mx-auto p-4">
-      <div className="p-8 mx-auto w-full max-w-[35rem] h-86 sm:h-[30rem] rounded-md bg-gradient-to-br from-[#373523] to-[#282617] shadow-md shadow-[rgba(0,0,0,0.5)]">
+      <div className="p-8 mx-auto w-full max-w-[35rem] h-86 rounded-md bg-gradient-to-br from-[#373523] to-[#282617] shadow-md shadow-[rgba(0,0,0,0.5)]">
         <Status />
         <Board />
       </div>
