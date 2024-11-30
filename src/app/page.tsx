@@ -1,9 +1,9 @@
 "use client";
 
-import Game from "./components/game";
+import Game from "../components/game";
 import { GameProvider } from "@/contexts/game-context";
-import Header from "./components/heaeder";
-import Footer from "./components/footer";
+import Header from "../components/heaeder";
+import Footer from "../components/footer";
 
 export default function Page() {
   return (
