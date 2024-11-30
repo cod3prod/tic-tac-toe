@@ -57,7 +57,7 @@ export default function LogInfo() {
         handleReverse={handleReverse}
         className="absolute top-0 right-10"
       />
-      <div className="mt-6 mx-auto w-full max-w-[35rem] min-h-44 overflow-auto custom-scrollbar">
+      <div className="mt-6 mx-auto w-full max-w-[35rem] min-h-44 overflow-auto">
         <ul>{isReversed ? reverseLog : log}</ul>
       </div>
       <Alarm />
