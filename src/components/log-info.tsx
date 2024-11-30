@@ -51,13 +51,13 @@ export default function LogInfo() {
   const reverseLog = log.slice().reverse();
 
   return (
-    <div>
-      <div className="mt-6 relative">
-        <ReverseButton
-          isReversed={isReversed}
-          handleReverse={handleReverse}
-          className="absolute top-0 right-20"
-        />
+    <div className="relative mx-auto w-full max-w-[35rem]">
+      <ReverseButton
+        isReversed={isReversed}
+        handleReverse={handleReverse}
+        className="absolute top-0 right-10"
+      />
+      <div className="mt-6 mx-auto w-full max-w-[35rem] min-h-44 overflow-auto custom-scrollbar">
         <ul>{isReversed ? reverseLog : log}</ul>
       </div>
       <Alarm />

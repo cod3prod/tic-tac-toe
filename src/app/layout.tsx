@@ -14,9 +14,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="ko">
-      <body className="relative h-screen bg-gradient-to-br from-yellow-300 to-orange-200">{children}</body>
+      <body className="relative min-h-screen flex flex-col bg-gradient-to-br from-yellow-300 to-orange-200">{children}</body>
     </html>
   );
 }

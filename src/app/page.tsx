@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <Header />
-      <main className="w-full">
+      <main className="w-full grow">
         <GameProvider>
           <Game />
         </GameProvider>

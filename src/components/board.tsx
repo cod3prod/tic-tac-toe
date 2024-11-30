@@ -24,7 +24,7 @@ export default function Board() {
   };
 
   return (
-    <section className="mx-auto w-2/3 aspect-square grid grid-cols-3 grid-rows-3 gap-2">
+    <div className="mx-auto w-2/3 aspect-square grid grid-cols-3 grid-rows-3 gap-2 sm:gap-4">
       {state.gameLog[state.gameLog.length - 1].map((isXNext: boolean | null, index: number) => (
         <Square
           key={index}
@@ -33,6 +33,6 @@ export default function Board() {
           handleClick={() => handleClick(index)}
         />
       ))}
-    </section>
+    </div>
   );
 }

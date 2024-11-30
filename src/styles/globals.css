@@ -24,3 +24,15 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: rgba(237,242,247,0.5);
+}
