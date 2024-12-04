@@ -1,27 +1,13 @@
-type BoardState = (boolean | null)[];
+import { GameState, GameAction } from "@/types/game-reducer";
 
-export type State = {
-  currentMove: number;
-  gameLog: BoardState[];
-  isXWinner: boolean | null;
-  winningSequence: number[] | null;
-};
-
-export const initialState: State = {
+export const initialState: GameState = {
   currentMove: 0,
   gameLog: [Array(9).fill(null)],
   isXWinner: null,
   winningSequence: null,
 };
 
-export type Action =
-  | { type: "SET_CURRENT_MOVE"; payload: number }
-  | { type: "SET_GAME_LOG"; payload: BoardState[] }
-  | { type: "SET_IS_X_WINNER"; payload: boolean | null }
-  | { type: "SET_WINNING_SEQUENCE"; payload: number[] | null };
-
-// Reducer 함수
-export const gameReducer = (state: State = initialState, action: Action): State => {
+export const gameReducer = (state: GameState = initialState, action: GameAction): GameState => {
   switch (action.type) {
     case "SET_CURRENT_MOVE":
       return { ...state, currentMove: action.payload };

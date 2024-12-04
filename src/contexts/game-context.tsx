@@ -1,12 +1,12 @@
 "use client";
 
-import { Action, State } from "@/reducer/game-reducer";
+import { GameState, GameAction } from "@/types/game-reducer";
 import React, { createContext, Dispatch, useReducer } from "react";
 import { gameReducer, initialState } from "@/reducer/game-reducer";
 
 type GameContextType = {
-    state: State
-    dispatch: Dispatch<Action>
+    state: GameState
+    dispatch: Dispatch<GameAction>
 }
 
 export const GameContext = createContext<GameContextType | null>(null);
