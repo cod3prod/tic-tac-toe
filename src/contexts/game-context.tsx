@@ -2,7 +2,7 @@
 
 import { GameState, GameAction } from "@/types/game-reducer";
 import React, { createContext, Dispatch, useReducer } from "react";
-import { gameReducer, initialState } from "@/reducer/game-reducer";
+import { gameReducer, initialState } from "@/reducers/game-reducer";
 
 type GameContextType = {
     state: GameState
