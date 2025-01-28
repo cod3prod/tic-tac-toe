@@ -10,7 +10,7 @@ export default function ReverseButton(props: {
   const { isReversed, handleReverse, className } = props;
 
   return (
-    <button className={twMerge("flex justify-center items-center w-10 h-10 text-2xl rounded-full bg-[rgba(255,255,255,0.5)] hover:bg-black hover:text-white", className)} onClick={handleReverse}>
+    <button className={twMerge("flex justify-center items-center w-10 h-10 text-2xl rounded-full bg-[rgba(255,255,255,0.5)] hover:bg-black hover:text-white cursor-pointer", className)} onClick={handleReverse}>
       {isReversed ? <FaArrowUp /> : <FaArrowDown />}
     </button>
   );

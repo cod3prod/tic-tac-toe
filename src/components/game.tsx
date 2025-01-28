@@ -18,11 +18,11 @@ export default function Game() {
 
     dispatch({ type: "SET_IS_X_WINNER", payload: isXWinner });
     dispatch({ type: "SET_WINNING_SEQUENCE", payload: line });
-  }, [state.currentMove]);
+  }, [state.currentMove, dispatch, state.gameLog]);
 
   return (
     <section className="container mx-auto p-4">
-      <div className="p-8 mx-auto w-full max-w-[35rem] h-86 rounded-md bg-gradient-to-br from-[#373523] to-[#282617] shadow-md shadow-[rgba(0,0,0,0.5)]">
+      <div className="p-8 mx-auto h-full w-full max-w-[35rem] rounded-md bg-linear-to-br from-[#373523] to-[#282617] shadow-md shadow-[rgba(0,0,0,0.5)]">
         <Status />
         <Board />
       </div>
